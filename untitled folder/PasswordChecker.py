@@ -2,7 +2,7 @@ import math
 import tkinter
 import customtkinter
 
-# CPSC 329 W23 PasswordChecker.py
+# PasswordPaladin - PasswordChecker.py
 # Jason Ngu & Alfred Zhu
 
 userInput = ""
@@ -612,7 +612,7 @@ customtkinter.set_default_color_theme("green")
 
 # application
 app = customtkinter.CTk()  # create CTk window like you do with the Tk window
-app.title("CPSC 329 W23 | Password Checker")
+app.title("PasswordPaladin | Password Checker")
 app.geometry("640x890")
 app.resizable(False, False)
 
@@ -621,7 +621,7 @@ frame = customtkinter.CTkFrame(master=app)
 frame.pack(pady=5, padx=5, fill="both", expand=True)
 
 # application name titleLabel
-titleLabel = customtkinter.CTkLabel(master=frame, text="CPSC 329 W23 | Password Checker", font=("OpenSans", 20))
+titleLabel = customtkinter.CTkLabel(master=frame, text="PasswordPaladin | Password Checker", font=("OpenSans", 20))
 titleLabel.pack(pady=5, padx=5)
 
 # titleLabel test
@@ -675,7 +675,7 @@ advancedResultsLabel.pack(pady=5, padx=5)
 advancedOutputBox = customtkinter.CTkTextbox(master=frame, height=255, width=350) #fg_color = "#2b2b2b"
 advancedOutputBox.pack(pady=5, padx=10)
 
-nameLabel = customtkinter.CTkLabel(master=frame, text="CPSC 329 W23 | Group 9", font=("OpenSans", 9))
+nameLabel = customtkinter.CTkLabel(master=frame, text="Jason Ngu & Alfred Zhu 2023", font=("OpenSans", 9))
 nameLabel.pack(pady=10, padx=0)
 
 app.mainloop()

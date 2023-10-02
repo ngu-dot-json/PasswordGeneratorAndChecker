@@ -1,7 +1,7 @@
 import customtkinter
 from subprocess import run
 
-# CPSC 329 W23 PasswordGenerator.py
+# PasswordPaladin PasswordGenerator.py
 # Jason Ngu & Alfred Zhu
 
 # initial setup
@@ -10,7 +10,7 @@ customtkinter.set_default_color_theme("green")
 
 # application
 app = customtkinter.CTk()  # create CTk window like you do with the Tk window
-app.title("CPSC 329 W23 | Password Checker & Generator")
+app.title("PasswordPaladin | Password Checker & Generator")
 app.geometry("480x360")
 app.resizable(False, False)
 
@@ -19,7 +19,7 @@ frame = customtkinter.CTkFrame(master=app)
 frame.pack(pady=5, padx=5, fill="both", expand=True)
 
 # application name titleLabel
-titleLabel = customtkinter.CTkLabel(master=frame, text="CPSC 329 W23 Final Project", font=("OpenSans", 20))
+titleLabel = customtkinter.CTkLabel(master=frame, text="PasswordPaladin", font=("OpenSans", 32))
 titleLabel.pack(pady=5, padx=5)
 
 titleLabel = customtkinter.CTkLabel(master=frame, text="Password Checker and Generator", font=("OpenSans", 14))
@@ -44,7 +44,7 @@ checkerButton.pack(pady=10, padx=10)
 generatorButton = customtkinter.CTkButton(frame, text="Launch Password Generator", font=("OpenSans", 14), width=350, height=50, command=launchGenerator)
 generatorButton.pack(pady=10, padx=10)
 
-nameLabel = customtkinter.CTkLabel(master=frame, text="CPSC 329 W23 | Group 9", font=("OpenSans", 9))
+nameLabel = customtkinter.CTkLabel(master=frame, text="Jason Ngu & Alfred Zhu 2023", font=("OpenSans", 9))
 nameLabel.pack(pady=20, padx=0)
 
 app.mainloop()
